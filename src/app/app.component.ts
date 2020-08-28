@@ -38,4 +38,32 @@ export class AppComponent {
         this.promedio = null
         this.suma = null
     }
+    // routerLinkActive;
+    // navLinks = [
+    //     {
+    //         label: "Bienvenido",
+    //         path: "./Bienvenido",
+    //         isActive: ""
+    //     },
+    //     {
+    //         label: "usuario",
+    //         path: "./usuario",
+    //         isActive: ""
+    //     },
+    //     {
+    //         label: "error",
+    //         path: "./error",
+    //         isActive: ""
+    //     },
+    //     {
+    //         label: "login",
+    //         path: "./login",
+    //         isActive: ""
+    //     },
+    //     {
+    //         label: "contact",
+    //         path: "./contact",
+    //         isActive: ""
+    //     },
+    // ];
 }

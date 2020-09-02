@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
 
@@ -12,32 +12,18 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  routerLinkActive;
   navLinks = [
       {
           label: "Bienvenido",
-          path: "./Bienvenido",
-          isActive: ""
-      },
-      {
-          label: "usuario",
-          path: "./usuario",
-          isActive: ""
+          path: "./bienvenido"
       },
       {
           label: "error",
-          path: "./error",
-          isActive: ""
+          path: "./error"
       },
       {
           label: "login",
-          path: "./login",
-          isActive: ""
-      },
-      {
-          label: "contact",
-          path: "./contact",
-          isActive: ""
+          path: "./login"
       },
   ];
 }

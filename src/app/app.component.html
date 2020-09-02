@@ -1,19 +1,25 @@
-<menu></menu>
+<app-menu></app-menu>
+
+<div class="container">
+    
+    <h1>Ejercicio 2</h1>
+    <router-outlet></router-outlet>
+
+    <hr>
+    <br>
+    <h1>Ejercicio 1</h1>
+    <div class="field">
+        <label for="age1">Edad 1</label>
+        <input type="number" name="age1" id="age1" [(ngModel)]="age1">
+    </div>
+    <div class="field">
+        <label for="age2">Edad 2</label>
+        <input type="number" name="age2" id="age2" [(ngModel)]="age2">
+    </div>
+    <button (click)="calcular()">calcular</button>
+    <button (click)="limpiar()">limpiar</button>
 
 
-<router-outlet></router-outlet>
-
-<div class="field">
-    <label for="age1">Edad 1</label>
-    <input type="number" name="age1" id="age1" [(ngModel)]="age1">
+    <p>{{promedio}}</p>
+    <p>{{suma}}</p>
 </div>
-<div class="field">
-    <label for="age2">Edad 2</label>
-    <input type="number" name="age2" id="age2" [(ngModel)]="age2">
-</div>
-<button (click)="calcular()">calcular</button>
-<button (click)="limpiar()">limpiar</button>
-
-
-<p>{{promedio}}</p>
-<p>{{suma}}</p>

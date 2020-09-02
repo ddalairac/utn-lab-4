@@ -1,1 +1,13 @@
-<p>login works!</p>
+<h2>login</h2>
+
+<div class="field">
+    <label for="usuario">Usuario</label>
+    <input type="number" name="usuario" id="usuario" [(ngModel)]="usuario">
+</div>
+<div class="field">
+    <label for="clave">Clave</label>
+    <input type="number" name="clave" id="clave" [(ngModel)]="clave">
+</div>
+
+<button (click)="aceptar()">calcular</button>
+<button (click)="limpiar()">limpiar</button>

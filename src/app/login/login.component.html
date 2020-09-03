@@ -2,12 +2,12 @@
 
 <div class="field">
     <label for="usuario">Usuario</label>
-    <input type="number" name="usuario" id="usuario" [(ngModel)]="usuario">
+    <input type="text" name="usuario" id="usuario" [(ngModel)]="usuario.nombre">
 </div>
 <div class="field">
     <label for="clave">Clave</label>
-    <input type="number" name="clave" id="clave" [(ngModel)]="clave">
+    <input type="text" name="clave" id="clave" [(ngModel)]="usuario.clave">
 </div>
 
-<button (click)="aceptar()">calcular</button>
-<button (click)="limpiar()">limpiar</button>
+<button (click)="usuario.aceptar()">aceptar</button>
+<a href="">Olvide mi clave</a>

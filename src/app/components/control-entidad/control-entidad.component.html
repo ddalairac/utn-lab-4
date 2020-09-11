@@ -1,12 +1,4 @@
-<p>control-entidad works!</p>
+<p>control-entidad</p>
 
-<div *ngIf="selectedItem" class="seleccion">
-    <h1>Persona seleccionada</h1>
-    <h3>{{selectedItem.Apellido}} {{selectedItem.Nombre}}</h3>
-        <img [src]="selectedItem.FotoPerfil" alt="">
-        <p>{{selectedItem.email}}</p>
-        <p>{{selectedItem.FechaNac}}</p>
-        <p>{{selectedItem.Sexo}}</p>
-</div>
-<!-- <h1>{{selectedItem | json}}</h1> -->
+<app-detalle-entidad [selectedItem]="selectedItem"></app-detalle-entidad>
 <app-listado-entidad [personas]="personas" (eventSelectedItem)="onEventSelectedItem($event)"></app-listado-entidad>

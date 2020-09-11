@@ -12,6 +12,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ListadoEntidadComponent } from './components/listado-entidad/listado-entidad.component';
 import { ControlEntidadComponent } from './components/control-entidad/control-entidad.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DetalleEntidadComponent } from './detalle-entidad/detalle-entidad.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     ErrorComponent,
     MenuComponent,
     ListadoEntidadComponent,
-    ControlEntidadComponent
+    ControlEntidadComponent,
+    DetalleEntidadComponent
   ],
   imports: [
     BrowserModule, 

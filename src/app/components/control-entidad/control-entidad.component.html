@@ -1,4 +1,11 @@
 <p>control-entidad</p>
 
-<app-detalle-entidad [selectedItem]="selectedItem"></app-detalle-entidad>
-<app-listado-entidad [personas]="personas" (eventSelectedItem)="onEventSelectedItem($event)"></app-listado-entidad>
+<app-detalle-entidad [selectedItem]="selectedItem" (eventDeleteItem)="onEventDeletedItem($event)"></app-detalle-entidad>
+<div class="col">
+    <h4>Items</h4>
+    <app-listado-entidad [personas]="personas" (eventSelectedItem)="onEventSelectedItem($event)"></app-listado-entidad>
+</div>
+<div class="col">
+    <h4>Delet items</h4>
+    <app-listado-entidad [personas]="personasDeleted" hideBtn="true"></app-listado-entidad>
+</div>

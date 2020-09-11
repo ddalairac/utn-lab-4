@@ -7,7 +7,7 @@
         <p>{{persona.email}}</p>
         <p>{{persona.FechaNac}}</p>
         <p>{{persona.Sexo}}</p>
-        <button (click)="onSelectPersona(persona)">Seleccionar</button>
+        <button (click)="onSelectPersona(persona)" *ngIf="!hideBtn">Seleccionar</button>
         <!-- <pre>{{persona | json}}</pre> -->
     </li>
 </ul>

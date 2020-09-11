@@ -13,7 +13,8 @@ export class ControlEntidadComponent implements OnInit {
     
     constructor(private restService: RestService) { }
 
-    personas: iPersona[];
+    personas: iPersona[] = [];
+    personasDeleted: iPersona[] = [];
     selectedItem: iPersona;
 
     ngOnInit(): void {
@@ -32,5 +33,10 @@ export class ControlEntidadComponent implements OnInit {
     }
     onEventSelectedItem(persona){
         this.selectedItem = persona
+    }
+    onEventDeletedItem(persona){
+        this.personas = this.personas.filter((p)=>p!=persona); 
+        this.personasDeleted.push(persona)
+        console.log({deleted: persona, listado:this.personas,deletedList:this.personasDeleted})
     }
 }

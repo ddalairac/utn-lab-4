@@ -12,13 +12,12 @@ export class ListadoEntidadComponent implements OnInit {
 
     constructor() { }
     @Input()  personas: iPersona[];
+    @Input()  hideBtn: boolean;
     @Output() eventSelectedItem: EventEmitter<iPersona> = new EventEmitter();
-    selectedItem: iPersona;
 
     ngOnInit(): void {
     }
     onSelectPersona(persona:iPersona){
-        this.selectedItem = persona;
         this.eventSelectedItem.emit(persona)
     }
 

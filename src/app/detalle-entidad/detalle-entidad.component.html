@@ -3,8 +3,9 @@
 <div *ngIf="selectedItem" class="seleccion">
     <h1>Persona seleccionada</h1>
     <h3>{{selectedItem.Apellido}} {{selectedItem.Nombre}}</h3>
-        <img [src]="selectedItem.FotoPerfil" alt="">
-        <p>{{selectedItem.email}}</p>
-        <p>{{selectedItem.FechaNac}}</p>
-        <p>{{selectedItem.Sexo}}</p>
+    <img [src]="selectedItem.FotoPerfil" alt="">
+    <p>{{selectedItem.email}}</p>
+    <p>{{selectedItem.FechaNac}}</p>
+    <p>{{selectedItem.Sexo}}</p>
+    <button (click)="onDeletPersona(selectedItem)">Borrar</button>
 </div>

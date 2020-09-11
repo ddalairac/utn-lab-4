@@ -25,5 +25,9 @@ export class MenuComponent implements OnInit {
           label: "login",
           path: "./login"
       },
+      {
+          label: "lista paises",
+          path: "./paises/listado"
+      },
   ];
 }

@@ -2,11 +2,12 @@
 
 <ul *ngIf="personas">
     <li *ngFor="let persona of personas">
-        <h3>{{persona.Apellido}} {{persona.Nombre}}</h3>
         <img [src]="persona.FotoPerfil" alt="">
+        <h3>{{persona.Apellido}} {{persona.Nombre}}</h3>
         <p>{{persona.email}}</p>
         <p>{{persona.FechaNac}}</p>
         <p>{{persona.Sexo}}</p>
+        <button (click)="onSelectPersona(persona)">Seleccionar</button>
         <!-- <pre>{{persona | json}}</pre> -->
     </li>
 </ul>

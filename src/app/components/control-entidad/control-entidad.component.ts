@@ -14,7 +14,7 @@ export class ControlEntidadComponent implements OnInit {
     constructor(private restService: RestService) { }
 
     personas: iPersona[];
-    // selectedItem: iPersona;
+    selectedItem: iPersona;
 
     ngOnInit(): void {
         this.getList();
@@ -24,11 +24,13 @@ export class ControlEntidadComponent implements OnInit {
         this.restService.getListPersonas().subscribe(
             (data: iPersona[]) => {
                 this.personas = data;
-                // (this.selectedItem = this.personas[0]), console.log("GET personas OK",this.personas);
             },
             (err: ErrorTracker) => {
                 console.log("GET personas ERR", err);
             }
         );
+    }
+    onEventSelectedItem(persona){
+        this.selectedItem = persona
     }
 }

@@ -1,0 +1,17 @@
+p{
+    margin: 0;
+}
+img {
+    width: 50px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+li {
+    margin-bottom: 5px;
+    border: 1px solid grey;
+    padding: 8px 15px;
+    border-radius: 5px;
+}

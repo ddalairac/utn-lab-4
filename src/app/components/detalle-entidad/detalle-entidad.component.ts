@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { iPersona } from '../models/persona.model';
+import { iPersona } from '../../models/persona.model';
 
 @Component({
     selector: 'app-detalle-entidad',

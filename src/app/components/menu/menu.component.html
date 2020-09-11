@@ -1,5 +1,5 @@
-<nav>
-    <div>Lab4</div>
+<nav [class.main]="isMain">
+    <div *ngIf="isMain">Lab4</div>
     <a *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive="active" >
         {{link.label}}
     </a>

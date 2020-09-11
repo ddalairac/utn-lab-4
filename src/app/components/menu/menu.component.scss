@@ -1,7 +1,10 @@
 nav {
     display: flex;
-    background: grey;
     padding: 10px 5px;
+    &.main{
+        background: grey;
+
+    }
     div {
         padding: 5px 8px;
         margin: 5px;

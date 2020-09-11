@@ -37,6 +37,7 @@ export class ControlEntidadComponent implements OnInit {
     onEventDeletedItem(persona){
         this.personas = this.personas.filter((p)=>p!=persona); 
         this.personasDeleted.push(persona)
+        this.selectedItem = null;
         console.log({deleted: persona, listado:this.personas,deletedList:this.personasDeleted})
     }
 }

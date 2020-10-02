@@ -18,6 +18,10 @@ export class AppComponent {
         {
             label: "Ejercicio3",
             path: "./ej3"
+        },
+        {
+            label: "Practica parcial",
+            path: "./pp"
         }
     ];
 }

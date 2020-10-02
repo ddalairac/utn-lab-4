@@ -1,0 +1,25 @@
+[
+    {
+        "id": "1",
+        "nombre": "Back to the future",
+        "tipo": "otros",
+        "fecha_de_estreno": "25-10-1982",
+        "cantidad_de_publico": "1000000",
+        "foto_de_la_película": "https://upload.wikimedia.org/wikipedia/en/d/d2/Back_to_the_Future.jpg"
+    },{
+        "id": "2",
+        "nombre": "Back to the future 2",
+        "tipo": "otros",
+        "fecha_de_estreno": "25-10-1984",
+        "cantidad_de_publico": "2000000",
+        "foto_de_la_película": "https://upload.wikimedia.org/wikipedia/en/c/c2/Back_to_the_Future_Part_II.jpg"
+    },{
+        "id": "3",
+        "nombre": "Back to the future 3",
+        "tipo": "otros",
+        "fecha_de_estreno": "25-10-1986",
+        "cantidad_de_publico": "3000000",
+        "foto_de_la_película": "https://musicimage.xboxlive.com/catalog/video.movie.8D6KGWZL5C22/image?locale=es-us&mode=crop&purposes=BoxArt&q=90&h=300&w=200&format=jpg"
+    }
+]
+

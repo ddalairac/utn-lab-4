@@ -16,6 +16,19 @@ import { DetalleEntidadComponent } from './components/detalle-entidad/detalle-en
 import { Ej1Component } from './components/ej1/ej1.component';
 import { Ej2Component } from './components/ej2/ej2.component';
 import { Ej3Component } from './components/ej3/ej3.component';
+import { PracticaParcialComponent } from './practica-parcial/practica-parcial.component';
+import { PpBienvenidoComponent } from './practica-parcial/pp-bienvenido/pp-bienvenido.component';
+import { PpBusquedaComponent } from './practica-parcial/pp-busqueda/pp-busqueda.component';
+import { PpPeliculaAltaComponent } from './practica-parcial/pp-pelicula-alta/pp-pelicula-alta.component';
+import { PpActorListadoComponent } from './practica-parcial/pp-actor-listado/pp-actor-listado.component';
+import { PpActorAltaComponent } from './practica-parcial/pp-actor-alta/pp-actor-alta.component';
+import { PpPeliculaListadoComponent } from './practica-parcial/pp-pelicula-listado/pp-pelicula-listado.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PpTablaPeliculaComponent } from './practica-parcial/pp-tabla-pelicula/pp-tabla-pelicula.component';
+import { PpDetallePeliculaComponent } from './practica-parcial/pp-detalle-pelicula/pp-detalle-pelicula.component';
+import { MaterialModule } from './vendors/material.module';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -29,14 +42,26 @@ import { Ej3Component } from './components/ej3/ej3.component';
     DetalleEntidadComponent,
     Ej1Component,
     Ej2Component,
-    Ej3Component
+    Ej3Component,
+    PracticaParcialComponent,
+    PpBienvenidoComponent,
+    PpBusquedaComponent,
+    PpPeliculaAltaComponent,
+    PpActorListadoComponent,
+    PpActorAltaComponent,
+    PpPeliculaListadoComponent,
+    PpTablaPeliculaComponent,
+    PpDetallePeliculaComponent
   ],
   imports: [
     BrowserModule, 
     FormsModule,
     CommonModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
